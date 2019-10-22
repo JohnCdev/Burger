@@ -1,0 +1,17 @@
+body {
+    background-color: #feb81c;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 5%;
+}
+
+img {
+    width: 200px;
+}
+
+.wrapper > div {
+    text-align: center;
+}
