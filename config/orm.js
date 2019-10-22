@@ -13,8 +13,8 @@ const orm = {
             cb(result);
         })
     },
-    updateOne: (table, col1, col2, val1, val2, id, cb) => {
-        connection.query("UPDATE ?? SET ??=?, ??=? WHERE id=?", [table, col1, val1, col2, val2, value, id], (err, result) => {
+    updateOne: (table, col1, val1, id, cb) => {
+        connection.query("UPDATE ?? SET ??=? WHERE id=?", [table, col1, val1, id], (err, result) => {
             if (err) throw err;
             cb(result);
         })

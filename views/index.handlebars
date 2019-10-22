@@ -3,18 +3,32 @@
         <img src="/assets/images/burger.png" alt="burger_image">
     </div>
 
-    <ul>
-        {{#each burgers}}
-            {{> burgers/burger-block}}
-        {{/each}}
-    </ul>
+    <div class="lists">
+        <ul id="burgers">
+            {{#each burgers}}
+                {{#unless devoured}}
+                    {{> burgers/burger-block}}
+                {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
 
-    <div>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+    <div class="lists">
+        <ul id="consumed">
+            {{#each burgers}}
+                {{#if devoured}}
+                    {{> burgers/burger-block}}
+                {{/if}}
+            {{/each}}
+        </ul>
     </div>
 
     <div>
-        <button>Submit</button>
+        <textarea name="" id="burgerName" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+        <button id="newBurger">Submit</button>
         <p>Enter a burger you want to eat click the "Submit" button</p>
     </div>
 </div>

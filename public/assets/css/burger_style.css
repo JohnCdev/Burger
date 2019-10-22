@@ -6,12 +6,35 @@ body {
     margin: 0 auto;
     width: 50%;
     margin-top: 5%;
+    position: relative;
 }
 
 img {
     width: 200px;
 }
 
-.wrapper > div {
+.wrapper>div {
     text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 20px;
+    min-width: 200px;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.lists {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+
+textarea {
+    width: 60%;
 }
